@@ -1,0 +1,8 @@
+	Öncelikle programı geliştirirken nasıl bir yol katettiğimi anlatmadan önce, bu çalışmada istenen internet sitesi "sahibinden.com" ile çalışma yapamadım çünkü sayfa CloudFlare ile korunuyor ve istek atıldığı zaman 403 hata kodu ile geri dönüş alıyorum. Güvenlik aşamasını geçemeden de sitenin istediğim kısımlarında çalışma yapamadım. Güvenlik duvarını aşmak için Selenium ile bot yazmayı, çeşitli güvenlik ayarlarını değiştirip istek atmayı, proxy kullanmayı, Tor kütüphaneleri ile IP gizleyerek giriş yapmayı gibi bir çok deneme sonucu hiç bir sonuç elde edemedim. Özellikle sayfa üzerine değil CloudFlare üzerine yoğunlaştım ve güvenlik duvarını geçmeye çalıştım fakat sonuç elde edemedim.
+	
+	Bunun üzerine istenilen internet sitesi gibi bir benzer olan "arabam.com" sitesinde çalışmaya devam ettim. İstenildiği gibi bir ürünlerin isim ve fiyat bilgileri mevcut, verileri okudum ve console üzerinde gösterdim.
+
+	Geliştirme aşamasından bahsetmek gerekirse görüşme saati itibari ile çalışmalara başladım ve ilk karşılaştığım sorun "sahibinden.com" sitesinin güvenlik duvarı olduğu için 1 günümü tamamen buna harcadım. Makaleler okudum, araştırmalar ve testler yaptım. Ardından "arabam.com" sitesine geçtiğim zaman konuya hakim olduğumdan dolayı ve bütün günümü araştırmaya harcadıktan sonra kodlamaya geçtim. Daha önce yaptığım projelerde buna çok benzer bir çalışma yaptığım için aynı şekilde kodumu hemen yazdım istenilen özellikleri ekledim ve tek bir konsol uygulamasında projeyi geliştirdim. Ertesi 1-2 gün boyunca yazdığım kodu inceledim ve testler yaptım. CloudFlare konusunu tekrar araştırdım.
+
+	Özet geçmek gerekirse bütün projeyi geliştirken harcadığım efor yüzde olarak, %50 Analiz, %30 Kodlama, %20 Test.
+
