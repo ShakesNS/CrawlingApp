@@ -129,8 +129,7 @@ namespace CrawlingApp
                     adPrice = HttpUtility.HtmlDecode(adPrice).Trim().Replace("\n", "");
 
                     // Elde ettiğim verileri tanımladığım özelliğe ekliyorum.
-                    Advertisements.Add(adName, adPrice);
-                    
+                    Advertisements.Add(adName, adPrice);                  
                 }            
             }
             catch (Exception)
