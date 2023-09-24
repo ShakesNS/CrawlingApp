@@ -1,4 +1,5 @@
 ﻿using HtmlAgilityPack;
+using RandomUserAgent;
 using System.Text;
 using System.Web;
 namespace CrawlingApp
@@ -40,6 +41,8 @@ namespace CrawlingApp
                     url = "https://" + url;
                 // İnternet sitesinin adresi ile sayfayı bir HtmlWeb nesnesinin içine atıyorum.
                 var web = new HtmlWeb();
+                // Olası IP banlanmasına karşı olarak bir random UserAgent Header oluşturan kütüphane kullanmak istedim.
+                web.UserAgent = RandomUa.RandomUserAgent;
                 var document = web.Load(url);
                 this.Page = document;
             }
@@ -136,9 +139,5 @@ namespace CrawlingApp
                 throw;
             }
         }
-
-
-
-
     }
 }

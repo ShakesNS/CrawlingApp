@@ -35,7 +35,7 @@ namespace System.Windows.CrawlingApp
                     Konsola listedeki fiyatların ortalamasını yazdırdım
                     ve 3 ondalıklı sayı ile yazdırmak için ToString ile format değiştirdim.
                 */
-                Console.WriteLine($"Average: {Prices.Average().ToString("N3")}");
+                Console.WriteLine($"Average: {Prices.Average().ToString("N3")} TL");
 
                 /*
                     Bir txt dosyası oluşturuyorum ve dosya yolunu masaüstü olarak seçiyorum
@@ -49,21 +49,15 @@ namespace System.Windows.CrawlingApp
                         file.WriteLine($"{ad.Key,-100} || {ad.Value,-25}");
                     }
                     file.WriteLine("\n");
-                    file.WriteLine($"Average: {Prices.Average().ToString("N3")}");
+                    file.WriteLine($"Average: {Prices.Average().ToString("N3")} TL");
                     file.Close();
                 }                
-
             }
             catch (Exception)
             {
                 // Herhangi bir hata durumunda hatayı göstermesi için gereken kod parçası
                 throw;
             }
-
         }
-
-
-
-
     }
 }
