@@ -2,7 +2,7 @@
 - Crawling Application belirli bir E-ticaret sitesinin ana sayfasında bulunan "Ana Sayfa Vitrini" bölümündeki ürünlerin isimleri ve ürün fiyatlarını okuyarak liste şeklinde konsol ekranında hedeflemektedir. 
 - Çalışma şekli aslında çok basit. Sadece uygulamayı çalıştırıyorsunuz ve birkaç saniye bekledikten sonra ürünlerin isimleri ve fiyatları konsol ekranına liste şeklinde geliyor ve listenin hemen alt tarafında fiyatların ortalamasını bulabilirsiniz.
 - Çalışma şeklini baştan sona sıralamak gerekirse;
-  * Uygulama çalışır çalışır çalışmaz girilen URL linkinin doğruluğunu kontrol ediyor ve internet sitesine bir "GET" HTTP metotu ile bir istek atarak sitenin HTML belgesini oluşturuyor.
+  * Uygulama çalışır çalışmaz girilen URL linkinin doğruluğunu kontrol ediyor ve internet sitesine bir "GET" HTTP metotu ile bir istek atarak sitenin HTML belgesini oluşturuyor.
   * Bu aşamadan sonra belge elimde olduğu için kaynak kodlarından istediğim verilerin bulunduğu bölmeleri nokta atışı belirliyorum ve bu bölmedeki bütün URL linklerini çekmesini istiyorum.
   * Elimde olan URL linkleri ile tekrardan sayfaların kaynak kodlarına ulaşıyorum ve bana lazım olan verileri çekiyorum. Çektiğim verileri istediğim formatta düzenleyerek önbellekte tutuyorum.
   * Verileri ardından bir liste şeklinde ürün ismi ve ürün fiyatı olmak üzere konsol ekranına yazdırıyorum ve hemen listenin altına fiyatların ortalamasını ekliyorum.
